@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "target": "ES2017",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "outDir": "./built",
+      "sourceMap": true
+    },
+    "include": ["src-ts/**/*", "hello-world"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+  }
