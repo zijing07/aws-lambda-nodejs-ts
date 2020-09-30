@@ -7,5 +7,11 @@ https://levelup.gitconnected.com/how-to-use-typescript-for-aws-lambda-in-3-steps
 $ cd hello-world
 $ npm run compile
 $ cd ..
-$ sam package --s3-bucket sam-lambda-ts && sam deploy --s3-bucket sam-lambda-ts
+$ sam deploy
+```
+
+## Test 
+```
+$ curl https://<endpoint id>.execute-api.us-east-1.amazonaws.com/Prod/hello/?a=1
+Queries: {"a":"1"}
 ```
