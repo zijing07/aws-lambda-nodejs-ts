@@ -6,18 +6,20 @@
   "repository": "https://github.com/awslabs/aws-sam-cli/tree/develop/samcli/local/init/templates/cookiecutter-aws-sam-hello-nodejs",
   "author": "SAM CLI",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^0.18.0"
-  },
+  "dependencies": {},
   "scripts": {
-    "test": "mocha tests/unit/",
+    "test": "jest --config=jest.config.test.js",
     "compile": "tsc"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
     "@types/aws-lambda": "^8.10.51",
+    "@types/jest": "^26.0.14",
     "@types/node": "^13.13.5",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2",
     "typescript": "^3.8.3"
   }
 }
