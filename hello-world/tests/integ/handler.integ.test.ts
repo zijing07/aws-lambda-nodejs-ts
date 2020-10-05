@@ -9,5 +9,5 @@ describe("Integration Test", () => {
 
         expect(response.status).toEqual(200);
         expect(response.data).toEqual(`Queries: ${JSON.stringify(query)}`);
-    }) 
-})
+    });
+});

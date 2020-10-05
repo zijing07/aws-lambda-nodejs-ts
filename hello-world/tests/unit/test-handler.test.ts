@@ -1,7 +1,7 @@
 import { APIGatewayProxyEvent } from "aws-lambda";
-import { lambdaHandler } from "../../app";
+import { lambdaHandler } from "../../src-ts/app";
 
-describe('Tests index', function () {
+describe('Unit test for app handler', function () {
     it('verifies successful response', async () => {
         const event: APIGatewayProxyEvent = {
             queryStringParameters: {
